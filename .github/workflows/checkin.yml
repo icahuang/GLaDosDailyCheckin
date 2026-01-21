@@ -26,6 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
+    # 当Action成功后，在Run checkin script一栏可以看到签到结果和剩余会员天数
     - name: Run checkin script
       env:
         GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
